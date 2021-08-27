@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <meta charset="utf8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    />
+    <link rel="stylesheet" href="styles/header-v2.css" />
+    <link rel="stylesheet" href="styles/menu-v2.css" />
+    <link rel="stylesheet" href="styles/footer-v2.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="new-boss no-touchevents">
+    <div class="beboss-head">
+      <div class="beboss-head__left">
+        <div class="beboss-head__burger js-head-btn">
+          // это открыть в новой версии<span></span>
+        </div>
+        <div class="beboss-head__active-section">
+          <a
+            class="beboss-head__active-section__icon object-icons"
+            href="https://www.beboss.ru/"
+          >
+            <object
+              type="image/svg+xml"
+              data="styles/logo.svg"
+              width="24"
+              height="24"
+            ></object> </a
+          ><a
+            class="beboss-head__active-section__text"
+            href="http://localhost:3000/html/pages/beboss/tovari-companii/main-tdb/index.html"
+            >Товары и услуги</a
+          >
+        </div>
+        <div
+          class="
+            beboss-head__btn-open beboss-head__btn-open_city-selection
+            js-bh-bo
+          "
+        >
+          <div class="beboss-head__icon">
+            <svg class="icon icon-i-n" width="24" height="24">
+              <use href="img/icons.svg#pin"></use>
+            </svg>
+          </div>
+          <div class="beboss-head__btn-open__selected-city">
+            Петропавловск-Камчатский
+          </div>
+          <div class="beboss-head__drop-down-container">
+            <div
+              class="
+                beboss-head__drop-down-block
+                beboss-head__drop-down-block_city-selection
+                js-bh-ddb
+              "
+            >
+              <div class="city-selection">
+                <div class="city-selection__form-group">
+                  <div class="city-selection__form-item js-cs-select">
+                    <div class="bk-select-container">
+                      <div class="bk-select-container__arrow"></div>
+                      <select
+                        class="bk-select bk-select_h-42"
+                        style="display: none"
+                      >
+                        <option selected="selected">Россия</option>
+                        <option>Украина</option>
+                        <option>Белоруссия</option>
+                        <option>Казахстан</option>
+                      </select>
+                      <div class="bk-select bk-select_h-42 bk-select_custom">
+                        <div class="bk-select__active-option">Россия</div>
+                        <div class="bk-select__option-list">
+                          <div class="bk-select__option-item">Россия</div>
+                          <div class="bk-select__option-item">Украина</div>
+                          <div class="bk-select__option-item">Белоруссия</div>
+                          <div class="bk-select__option-item">Казахстан</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="city-selection__form-item">
+                    <input
+                      class="bk-input-text bk-input-text_full form-control"
+                      type="text"
+                      placeholder="Поиск"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="
+                    city-selection__list-container
+                    js-bh-ddb-scroll-root
+                    baron baron__root baron__clipper
+                    _macosx
+                    _scrollbar
+                  "
+                  style="overflow: hidden"
+                  data-baron-v-id="0"
+                >
+                  <div
+                    class="
+                      city-selection__list
+                      js-bh-ddb-scroller
+                      baron__scroller
+                    "
+                    style="
+                      overflow-y: scroll;
+                      box-sizing: border-box;
+                      margin: 0px;
+                      border: 0px none;
+                      width: 303px;
+                      min-width: 303px;
+                      max-width: 303px;
+                    "
+                  >
+                    <a class="city-selection__item" href="#">Вся Россия</a
+                    ><a
+                      class="city-selection__item city-selection__item_active"
+                      href="#"
+                      >Москва</a
+                    ><a class="city-selection__item" href="#"
+                      >Санкт-Петербург</a
+                    >
+                    <hr class="mx-0" />
+                    <a class="city-selection__item" href="#">Астрахань</a
+                    ><a class="city-selection__item" href="#">Барнаул</a
+                    ><a class="city-selection__item" href="#">Санкт-Петербург</a
+                    ><a class="city-selection__item" href="#"
+                      >Великий Новгород</a
+                    ><a class="city-selection__item" href="#">Владивосток</a
+                    ><a class="city-selection__item" href="#">Грозный</a
+                    ><a class="city-selection__item" href="#">Казань</a
+                    ><a class="city-selection__item" href="#">Нижний Новгород</a
+                    ><a class="city-selection__item" href="#">Омск</a
+                    ><a class="city-selection__item" href="#">Саратов</a>
+                  </div>
+                  <div class="baron__track">
+                    <div class="baron__free">
+                      <div
+                        class="js-bh-ddb-scrollbar baron__bar"
+                        style="height: 149px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="beboss-head__city-tooltip hide">
+          <div class="ntf-item">
+            <div class="ntf-item__text-container">
+              <div class="ntf-item__title">Петропавловск-Камчатский</div>
+              <div class="ntf-item__text">Вы находитесь здесь?</div>
+            </div>
+            <div class="ntf-item__control-panel">
+              <div class="ntf-item__control">
+                <a class="btn btn-primary btn-sm" href="#">Да</a>
+              </div>
+              <div class="ntf-item__control">
+                <button class="btn btn-outline-primary btn-sm" type="button">
+                  Выбрать другой город
+                </button>
+              </div>
+            </div>
+            <div class="ntf-item__close"></div>
+          </div>
+        </div>
+      </div>
+      <div class="beboss-head__right">
+        <div class="beboss-head__btn-add beboss-head__btn-add_a">
+          <button class="btn btn-primary" type="button">+ Объявление</button>
+        </div>
+        <div class="beboss-head__btn-open js-bh-bo">
+          <div class="beboss-head__icon">
+            <svg class="icon icon-i-n" width="24" height="24">
+              <use href="img/icons.svg#message"></use>
+            </svg>
+          </div>
+          <div class="beboss-head__icon beboss-head__icon_new object-icons">
+            <object
+              type="image/svg+xml"
+              data="styles/mes_new.svg"
+              width="24"
+              height="24"
+            ></object>
+          </div>
+          <div class="beboss-head__drop-down-container">
+            <div
+              class="
+                beboss-head__drop-down-block beboss-head__drop-down-block_mes
+                js-bh-ddb js-bh-ddb-scroll-root
+                baron baron__root baron__clipper
+                _macosx
+              "
+            >
+              <div class="bk-preload-wrap js-dbh-preload hide">
+                <div class="bk-preload__body">
+                  <div class="bk-preload__content bk-preload__content_front">
+                    <div
+                      class="bk-preload__item border bk-preload__item_orange"
+                    ></div>
+                    <div
+                      class="bk-preload__item border bk-preload__item_green"
+                    ></div>
+                    <div
+                      class="bk-preload__item border bk-preload__item_yellow"
+                    ></div>
+                    <div
+                      class="bk-preload__item border bk-preload__item_blue"
+                    ></div>
+                  </div>
+                  <div class="bk-preload__content bk-preload__content_right">
+                    <div class="bk-preload__item border"></div>
+                    <div class="bk-preload__item border"></div>
+                    <div class="bk-preload__item border"></div>
+                    <div class="bk-preload__item border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="baron__track">
+                <div class="baron__free">
+                  <div class="js-bh-ddb-scrollbar baron__bar"></div>
+                </div>
+              </div>
+              <div class="bh-empty-ddb">
+                <div class="bh-empty-ddb__img">
+                  <img src="styles/mes.png" />
+                </div>
+                <div class="bh-empty-ddb__text">У вас пока нет сообщений</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="beboss-head__btn-open beboss-head__btn-open_vip">
+          <a href="#">
+            <div class="beboss-head__vip-switch"><span>VIP</span></div>
+          </a>
+        </div>
+        <div class="beboss-head__btn-open beboss-head__vip-mobile">
+          <div class="beboss-head__icon">
+            <a
+              href="https://www.beboss.ru/personal/pro?type=header_switch&amp;backurl=https%3A%2F%2Fwww.beboss.ru%2F"
+            >
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#vip"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="beboss-head__btn-open js-bh-bo">
+          <div class="beboss-head__userpic">
+            <img src="styles/ffffff_003.png" />
+          </div>
+          <div class="beboss-head__battery">
+            <div class="battery battery_head">
+              <div class="battery__indicator-container">
+                <div class="battery__indicator battery__indicator_paint"></div>
+                <div class="battery__indicator battery__indicator_paint"></div>
+                <div class="battery__indicator"></div>
+                <div class="battery__indicator"></div>
+                <div class="battery__indicator"></div>
+              </div>
+            </div>
+          </div>
+          <div class="beboss-head__drop-down-container">
+            <div
+              class="
+                beboss-head__drop-down-block beboss-head__drop-down-block_menu
+                js-bh-ddb js-bh-ddb-scroll-root
+                baron baron__root baron__clipper
+                _macosx
+              "
+              style="overflow: hidden"
+              data-baron-v-id="3"
+            >
+              <div
+                class="
+                  beboss-menu
+                  beboss-head__drop-down-scroller-block
+                  js-bh-ddb-scroller
+                  baron__scroller
+                "
+                style="
+                  overflow-y: scroll;
+                  box-sizing: border-box;
+                  margin: 0px;
+                  border: 0px none;
+                  width: 317px;
+                  min-width: 317px;
+                  max-width: 317px;
+                "
+              >
+                <a class="beboss-menu__item" href="#">
+                  <div class="beboss-menu__item-img">
+                    <img src="styles/ffffff.png" />
+                  </div>
+                  <div class="beboss-menu__item-text">
+                    Константин Константинович Константинов
+                  </div> </a
+                ><a class="beboss-menu__item" href="#">
+                  <div class="bm-profile">
+                    <div class="bm-profile__battery">
+                      <div class="bm-profile__battery-icon">
+                        <svg class="icon icon-i-n" width="24" height="24">
+                          <use href="img/icons.svg#light"></use>
+                        </svg>
+                      </div>
+                      <div class="bm-profile__battery-qt">2/5</div>
+                      <div class="bm-profile__battery-container">
+                        <div class="battery battery_menu">
+                          <div class="battery__indicator-container">
+                            <div
+                              class="
+                                battery__indicator battery__indicator_paint
+                              "
+                            ></div>
+                            <div
+                              class="
+                                battery__indicator battery__indicator_paint
+                              "
+                            ></div>
+                            <div class="battery__indicator"></div>
+                            <div class="battery__indicator"></div>
+                            <div class="battery__indicator"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> </a
+                ><a class="beboss-menu__item" href="#">
+                  <div class="bm-profile">
+                    <div class="bm-profile__battery bm-profile__battery_vip">
+                      <div class="bm-profile__battery-icon">
+                        <svg class="icon icon-average" width="24" height="24">
+                          <use href="img/icons.svg#vip"></use>
+                        </svg>
+                      </div>
+                      <div class="bm-profile__battery-qt">VIP активен</div>
+                      <div class="bm-profile__battery-text">Ещё 8500 дней</div>
+                    </div>
+                  </div> </a
+                ><a class="beboss-menu__item" href="#">
+                  <div class="beboss-menu__item-icon">
+                    <svg class="icon icon-i-n" width="24" height="24">
+                      <use href="img/icons.svg#balans"></use>
+                    </svg>
+                  </div>
+                  <div class="beboss-menu__item-text">Баланс: 850 000 ₽</div>
+                </a>
+                <hr class="mx-0" />
+                <a class="beboss-menu__item" href="#">
+                  <div class="beboss-menu__item-icon">
+                    <svg class="icon icon-i-n" width="24" height="24">
+                      <use href="img/icons.svg#message"></use>
+                    </svg>
+                  </div>
+                  <div class="beboss-menu__item-text">Сообщения</div>
+                  <span class="beboss-menu__item-qt beboss-menu__item-qt_new"
+                    >1</span
+                  ></a
+                ><a class="beboss-menu__item" href="#">
+                  <div class="beboss-menu__item-icon">
+                    <svg class="icon icon-i-n" width="24" height="24">
+                      <use href="img/icons.svg#24_pickup"></use>
+                    </svg>
+                  </div>
+                  <div class="beboss-menu__item-text">Магазин лидов</div>
+                </a>
+              </div>
+              <div class="baron__track">
+                <div class="baron__free">
+                  <div
+                    class="js-bh-ddb-scrollbar baron__bar"
+                    style="height: 0px; top: 0px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ntf-pop-up ntf-pop-up_battery hide">
+          <div class="ntf-item">
+            <div class="ntf-item__img">
+              <div class="ntf-item__img-userpic">
+                <img src="styles/entry-photo.png" />
+              </div>
+              <img src="styles/ntf-bat-anim.gif" />
+            </div>
+            <div class="ntf-item__title">Счетчик действий</div>
+            <div class="ntf-item__text">
+              Каждый зарегистрированный пользователь БИБОСС может совершать на
+              сайте до <strong>5&nbsp;действий&nbsp;в&nbsp;день. </strong
+              ><br /><br />VIP-пользователи пользуются неограниченным
+              количеством действий. <a class="text-link" href="#">Подробнее</a>
+            </div>
+            <div class="ntf-item__close"></div>
+          </div>
+        </div>
+        <a class="beboss-head__btn-entry" href="#">
+          <div class="bk-item">
+            <div class="bk-item__icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#profile"></use>
+              </svg>
+            </div>
+            <div class="bk-item__txt">Войти</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="bmc js-bmc bmc_visible">
+      <div class="bmc__list">
+        <div class="bmc__btn-add">
+          <a class="bmc-btn js-bmc-btn" href="#">
+            <div class="bmc-btn__text">Добавить объявление</div>
+            <div class="bmc-btn__icon bmc-btn__icon_a">
+              <svg class="icon icon-light" width="24" height="24">
+                <use href="img/icons.svg#obj"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="bmc__btn-plus js-bmc-btn-plus"></div>
+    </div>
+    <nav
+      class="
+        beboss-menu beboss-menu_main
+        js-beboss-main-menu
+        baron baron__root baron__clipper
+        _macosx
+        js-menu-container
+      "
+      style="overflow: hidden"
+      data-baron-v-id="4"
+    >
+      //открыть закомментированое в новой версии страницы
+      <div
+        class="
+          beboss-menu__container
+          js-beboss-main-menu-container
+          baron__scroller
+        "
+        style="
+          overflow-y: scroll;
+          box-sizing: border-box;
+          margin: 0px;
+          border: 0px none;
+          width: 92px;
+          min-width: 92px;
+          max-width: 92px;
+        "
+      >
+        <div class="beboss-menu__top-container">
+          // открыть закомментированое в новой версии страницы
+          <div class="beboss-menu__close js-menu-btn"><span></span></div>
+          <a class="beboss-menu__logo-container" href="https://www.beboss.ru/">
+            <div class="beboss-menu__logo-icon object-icons">
+              <object
+                type="image/svg+xml"
+                data="styles/logo.svg"
+                width="24"
+                height="24"
+              ></object>
+            </div>
+            <div class="beboss-menu__logo-text">БИБОСС</div>
+          </a>
+        </div>
+        <div class="beboss-menu__search-container">
+          <form>
+            <div class="main-search">
+              <label
+                class="
+                  main-search__label
+                  bk-input-text-container
+                  js-main-search-label
+                "
+              >
+                <input
+                  class="
+                    bk-input-text
+                    main-search__input
+                    js-main-search-input
+                    form-control
+                  "
+                  placeholder="Поиск"
+                />
+                <div class="main-search-autocomplete bk-input-autocomplete">
+                  <div class="bk-input-autocomplete__item">test 1</div>
+                  <div class="bk-input-autocomplete__item">test 2</div>
+                  <div class="bk-input-autocomplete__item">test 3</div>
+                  <div class="bk-input-autocomplete__item">test 4</div>
+                  <div class="bk-input-autocomplete__item">test 5</div>
+                  <div class="bk-input-autocomplete__item">test 6</div>
+                </div>
+                <button class="main-search__btn bk-form-elem-btn">
+                  <svg class="icon icon-primary" width="24" height="24">
+                    <use href="img/icons.svg#arrow_right"></use>
+                  </svg>
+                </button>
+                <div class="main-search__icon bk-form-elem-icon">
+                  <svg class="icon icon-i-n" width="24" height="24">
+                    <use href="img/icons.svg#loup"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="beboss-menu__block">
+          <a class="beboss-menu__item" href="https://www.beboss.ru/">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#fr_services"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Сообщество</div>
+          </a>
+          <a class="beboss-menu__item beboss-menu__item_active" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#kn"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">
+              Коммерческая недвижимость
+            </div> </a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#fr_b2b-services"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Франшизы</div> </a
+          ><a class="beboss-menu__item" href="https://www.beboss.ru/">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#gb"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Готовый бизнес</div>
+          </a>
+          <a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#opt"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Товары и услуги</div> </a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#24_black_suppl"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Поставщики</div> </a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#invest"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Инвестции</div> </a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#idea"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Бизнес-идеи</div> </a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#bplan"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Бизнес-планы</div>
+          </a>
+        </div>
+        <div class="beboss-menu__bottom-block">
+          <div class="beboss-menu__separator"></div>
+          <a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#24_plus"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Добавить объявление</div> </a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#pin"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Регион</div>
+            <span class="beboss-menu__item-value"
+              >Петропавловск-Комчатский</span
+            ></a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#balans"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Валюта</div>
+            <span class="beboss-menu__item-value">РУБ</span></a
+          ><a class="beboss-menu__item" href="#">
+            <div class="beboss-menu__item-icon">
+              <svg class="icon icon-i-n" width="24" height="24">
+                <use href="img/icons.svg#earth_planet"></use>
+              </svg>
+            </div>
+            <div class="beboss-menu__item-text">Язык сайта</div>
+            <span class="beboss-menu__item-value">Русский</span></a
+          >
+        </div>
+      </div>
+      <div class="baron__track">
+        <div class="baron__free">
+          <div
+            class="js-beboss-main-menu-scrollbar baron__bar"
+            style="height: 0px; top: 0px"
+          ></div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="wrap">
+      <main class="main">
+        <div class="page-wrap">
+          <div class="container">
+            <div class="main-content">
+              <div class="main-content__info contest-info">
+                <img src="img/medal.svg" alt="logo medal" />
+                <div class="contest-info__inner">
+                  <h2 class="contest__title">Конкурс БИБОСС</h2>
+                  <h3 class="contest__subtitle">«Лучшее видео о франшизе»</h3>
+                </div>
+              </div>
+              <div class="main-content__video-block">
+                <h1 class="main-content__title">
+                  Видео о франшизе «Персональное решение»
+                </h1>
+                <div class="video-vote">
+                  <div class="video-vote__block-video video-block">
+                    <video
+                      class="video-block__video"
+                      controls
+                      poster="img/main-video.jpg"
+                    >
+                      <source src="media/video.mp4" type="video/mp4" />
+                      <source src="media/video.mp4" type="video/ogg" />
+                      <source src="media/video.mp4" type="video/webm" />
+                    </video>
+                  </div>
+                  <div class="video-vote__block-vote vote-block">
+                    <h4 class="vote-block__title">Голосование</h4>
+                    <p class="vote-block__description">
+                      Для того, чтобы проголосовать за видео, нужно сделать
+                      репост в любой из соцсетей:
+                    </p>
+                    <div class="vote-block__buttons">
+                      <a
+                        class="
+                          button-vote__wrapper
+                          button-vote_primary
+                          button-vote_fb
+                        "
+                        href="https://www.facebook.com/BeBoss.ru"
+                        target="_blank"
+                      >
+                        <img
+                          class="button-vote__icon"
+                          src="img/fb.svg"
+                          alt="logo Facebook"
+                        />
+                        <span class="button-vote__text">Голосовать FB</span>
+                      </a>
+                      <a
+                        class="
+                          button-vote__wrapper
+                          button-vote_primary
+                          button-vote_vk
+                        "
+                        href="https://vk.com/beboss"
+                        target="_blank"
+                      >
+                        <img
+                          class="button-vote__icon"
+                          src="img/vk.svg"
+                          alt="logo Vkontakte"
+                        />
+                        <span class="button-vote__text">Голосовать VK</span>
+                      </a>
+                      <a
+                        class="
+                          button-vote__wrapper
+                          button-vote_primary
+                          button-vote_ok
+                        "
+                        href="https://ok.ru/"
+                        target="_blank"
+                      >
+                        <img
+                          class="button-vote__icon"
+                          src="img/ok.svg"
+                          alt="logo ok.ru"
+                        />
+                        <span class="button-vote__text">Голосовать OK</span>
+                      </a>
+                    </div>
+                    <div class="vote-block__amount">
+                      <span class="vote-block__counter">657</span> голосов
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="personal-solution_wrapper">
+            <div class="personal-solution">
+              <a class="personal-solution__link primary-button" href="#">
+                <img src="img/personal-logo.png" alt="Logo personal solution" />
+              </a>
+              <div class="personal-info">
+                <h3 class="primary-title personal-info__title">
+                  <a class="personal-solution__link primary-button" href="#"
+                    >Персональное решение</a
+                  >
+                </h3>
+                <p class="primary-text personal-info__subtitle">
+                  Инвестиции 378 000 — 675 000 ₽
+                </p>
+                <a href="#" class="primary-text personal-info__link"
+                  >Страница франшизы<svg
+                    class="personal-info__link-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2426 12L9.29289 7.05025C8.90237 6.65972 8.90237 6.02656 9.29289 5.63603C9.68342 5.24551 10.3166 5.24551 10.7071 5.63603L16.364 11.2929C16.7545 11.6834 16.7545 12.3166 16.364 12.7071L10.7071 18.364C10.3166 18.7545 9.68342 18.7545 9.29289 18.364C8.90237 17.9734 8.90237 17.3403 9.29289 16.9497L14.2426 12Z"
+                      fill="black"
+                      fill-opacity="0.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="personal-solution__representative representative">
+                <div class="representative__info">
+                  <img
+                    class="representative__photo"
+                    src="img/representative.png"
+                    alt="photo representative"
+                  />
+                  <div class="representative__inner">
+                    <h5 class="primary-text representative__name">
+                      Дмитрий Варфоломеев
+                    </h5>
+                    <span class="primary-text representative__status"
+                      >Представитель</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="primary-button primary-text representative__button"
+                >
+                  Запросить финплан
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="main-info">
+            <div class="indicators_wrapper">
+              <div class="indicators">
+                <h4 class="primary-title indicators__title">Показатели</h4>
+                <hr class="primary-line indicators__line" />
+                <ul class="indicators__list primary-list">
+                  <li class="indicators__item primary-text">
+                    <strong class="indicators__number">1725</strong>
+                    Год основания компании
+                  </li>
+                  <li class="indicators__item primary-text">
+                    <strong class="indicators__number">1894</strong>
+                    Год запуска франчайзинга
+                  </li>
+                  <li class="indicators__item primary-text">
+                    <strong class="indicators__number">26 850</strong>
+                    Франшизных предприятий
+                  </li>
+                  <li class="indicators__item primary-text">
+                    <strong class="indicators__number">1</strong>
+                    Собственных предприятий
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-company">
+              <div class="about-company__info-company company-info">
+                <h4 class="primary-title company-info__title">О компании</h4>
+                <hr class="primary-line company-info__line" />
+                <p class="primary-text company-info__description">
+                  Открой СВОЙ БИЗНЕС на услугах рабочей силы и ЗАРАБАТЫВАЙ от
+                  200 000 рублей в месяц.<br />
+                  За руку доведем до 200 000 руб/ мес личного дохода, даже если
+                  это твой первый бизнес!<br />
+                  - НАЧАТЬ ОЧЕНЬ ЛЕГКО<br />
+                  Без найма кучи народу, закупок, оборудования и “закапывания”
+                  миллионов на годы. Первое время можно без офиса.
+                </p>
+                <a
+                  href="https://www.beboss.ru/"
+                  class="company-info__link primary-text personal-info__link"
+                  >Страница франшизы<svg
+                    class="personal-info__link-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2426 12L9.29289 7.05025C8.90237 6.65972 8.90237 6.02656 9.29289 5.63603C9.68342 5.24551 10.3166 5.24551 10.7071 5.63603L16.364 11.2929C16.7545 11.6834 16.7545 12.3166 16.364 12.7071L10.7071 18.364C10.3166 18.7545 9.68342 18.7545 9.29289 18.364C8.90237 17.9734 8.90237 17.3403 9.29289 16.9497L14.2426 12Z"
+                      fill="black"
+                      fill-opacity="0.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="about-company__cost-franchise franchise-cost">
+                <h3 class="primary-title franchise-cost__title">
+                  Стоимость франшизы и цена владения
+                </h3>
+                <table class="franchise-cost__table cost-table">
+                  <tr class="cost-table__line">
+                    <th class="cost-table__paragraph primary-text">
+                      Вступительный взнос
+                    </th>
+                    <td class="cost-table__value">150 000 — 400 000 ₽</td>
+                  </tr>
+                  <tr class="cost-table__line">
+                    <th class="cost-table__paragraph primary-text">Роялти</th>
+                    <td class="cost-table__value">
+                      5% от оборота в месяц, но не более 10 000 руб. При этом
+                      минимальная гарантированная сумма, подлежащая переводу
+                      Дилером, составляет 5 000 рублей (для городов менее 250
+                      тысяч жителей 3 000 руб., для городов менее 100 тысяч
+                      согласовывается)
+                    </td>
+                  </tr>
+                  <tr class="cost-table__line">
+                    <th class="cost-table__paragraph primary-text">
+                      Иные текущие платежи
+                    </th>
+                    <td class="cost-table__value">
+                      Аттестация и повышение квалификации тренеров 2 000 — 5 000
+                      рублей в год
+                    </td>
+                  </tr>
+                </table>
+                <hr class="primary-line" />
+                <div class="franchise-cost__request">
+                  <a
+                    class="franchise-cost__link-download primary-button"
+                    download
+                    href="media/financial-plan.xlsx"
+                  >
+                    <div class="franchise-cost__link-img">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 2C12.5523 2 13 2.44772 13 3V12.5858L16.2929 9.29289C16.6834 8.90237 17.3166 8.90237 17.7071 9.29289C18.0976 9.68342 18.0976 10.3166 17.7071 10.7071L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L6.29289 10.7071C5.90237 10.3166 5.90237 9.68342 6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289L11 12.5858V3C11 2.44772 11.4477 2 12 2ZM3 12C3.55228 12 4 12.4477 4 13V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V13C20 12.4477 20.4477 12 21 12C21.5523 12 22 12.4477 22 13V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V13C2 12.4477 2.44772 12 3 12Z"
+                          fill="black"
+                          fill-opacity="0.2"
+                        />
+                      </svg>
+                    </div>
+                    <span class="franchise-cost__text"
+                      >Запросить финансовый план</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="franchise-info">
+                <h3 class="franchise-info__title">Описание франшизы</h3>
+                <hr class="franchise-info__line primary-line" />
+                <p class="franchise-info__description primary-text">
+                  ЧЕМ ТЫ БУДЕШЬ ЗАНИМАТЬСЯ? И КАК БУДЕШЬ ЗАРАБАТЫВАТЬ НА УСЛУГАХ
+                  РАБОЧЕЙ СИЛЫ?<br />
+                  Ты будешь предоставлять рабочую силу на склады, фабрики,
+                  заводы, производства со сдельной и почасовой оплатой.<br />
+                  Кто будет работать у тебя?<br />
+                  • Рабочие, ищущие дополнительный заработок<br />
+                  • Временно безработные люди<br />
+                </p>
+                <a
+                  href="https://www.beboss.ru/"
+                  class="company-info__link primary-text personal-info__link"
+                  >Страница франшизы<svg
+                    class="personal-info__link-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2426 12L9.29289 7.05025C8.90237 6.65972 8.90237 6.02656 9.29289 5.63603C9.68342 5.24551 10.3166 5.24551 10.7071 5.63603L16.364 11.2929C16.7545 11.6834 16.7545 12.3166 16.364 12.7071L10.7071 18.364C10.3166 18.7545 9.68342 18.7545 9.29289 18.364C8.90237 17.9734 8.90237 17.3403 9.29289 16.9497L14.2426 12Z"
+                      fill="black"
+                      fill-opacity="0.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="photo-franchise">
+                <div class="photo-franchise__column">
+                  <a href="#" class="photo-franchise__img-link">
+                    <img
+                      class="photo-franchise__img"
+                      src="img/photo-franchise_1.png"
+                      alt="Photo franchise №1"
+                    />
+                  </a>
+                  <a href="#" class="photo-franchise__img-link">
+                    <img
+                      class="photo-franchise__img"
+                      src="img/photo-franchise_2.png"
+                      alt="Photo franchise №2"
+                    />
+                  </a>
+                </div>
+                <div class="photo-franchise__column">
+                  <a href="#" class="photo-franchise__img-link">
+                    <img
+                      class="photo-franchise__img"
+                      src="img/photo-franchise_3.png"
+                      alt="Photo franchise №3"
+                    />
+                  </a>
+                  <a href="#" class="photo-franchise__img-link">
+                    <img
+                      class="photo-franchise__img"
+                      src="img/photo-franchise_4.png"
+                      alt="Photo franchise №4"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="feedback-content">
+                <div class="feedback-content__representative representative">
+                  <div class="representative__info">
+                    <img
+                      class="representative__photo"
+                      src="img/representative.png"
+                      alt="photo representative"
+                    />
+                    <div class="representative__inner">
+                      <h5 class="primary-text representative__name">
+                        Дмитрий Варфоломеев
+                      </h5>
+                      <span class="primary-text representative__status"
+                        >Представитель</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback-content__inner-wrap">
+                  <div class="feedback-content__form">
+                    <form
+                      class="feedback-form"
+                      action="https://echo.htmlacademy.ru"
+                      method="post"
+                    >
+                      <input
+                        class="feedback-form__field form-field form-field_name"
+                        type="text"
+                        name="user_name"
+                        placeholder="Ваше имя"
+                        required
+                      />
+                      <input
+                        class="feedback-form__field form-field form-field_email"
+                        type="email"
+                        name="user_email"
+                        placeholder="E-mail"
+                        required
+                      />
+                      <input
+                        class="feedback-form__field form-field form-field_tel"
+                        type="tel"
+                        name="user_tel"
+                        placeholder="Номер телефона"
+                        required
+                      />
+                      <textarea
+                        class="form-field form-field_text"
+                        name="user_text"
+                        placeholder="Введите сообщение"
+                      ></textarea>
+                      <fieldset class="checkbox-robot">
+                        <div class="checkbox-robot_inner">
+                          <label class="checkbox-robot__label">
+                            <input
+                              class="checkbox-robot__input"
+                              type="checkbox"
+                              required
+                            />
+                            <span class="checkbox-robot__box"></span>
+                            <span class="checkbox-robot__text primary-text"
+                              >Я не робот</span
+                            >
+                          </label>
+                        </div>
+                        <span class="checkbox-robot__inscription"
+                          >Проверка<br />
+                          безопасности</span
+                        >
+                      </fieldset>
+                      <button
+                        class="feedback-form__button primary-button"
+                        type="submit"
+                      >
+                        Отправить сообщение
+                      </button>
+                    </form>
+                    <div class="feedback-content__security">
+                      <svg
+                        class="feedback-content__security-img"
+                        width="35"
+                        height="37"
+                        viewBox="0 0 35 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M34.4137 23.7174L26.2766 32.9563C25.1904 34.1866 23.6204 34.8926 21.9697 34.8932H9.71258L7.5839 37L0 29.6829L5.43615 24.3366C7.68798 22.1224 11.02 21.376 14.0157 22.4148L15.2136 22.8301H22.5533C23.1792 22.8298 23.7785 23.0807 24.2142 23.5254C24.6499 23.9702 24.8848 24.5707 24.8651 25.1899C24.7937 26.4474 23.7342 27.4261 22.4618 27.4099H18.048C17.7131 27.3883 17.3938 27.5529 17.2197 27.8369C17.0456 28.121 17.0456 28.4772 17.2197 28.7613C17.3938 29.0453 17.7131 29.2099 18.048 29.1883H22.4618C24.6998 29.191 26.5462 27.455 26.6581 25.2427C26.6581 25.2427 26.6581 25.205 26.6581 25.1861L30.7362 20.6554C31.5967 19.6672 33.0898 19.5226 34.1276 20.3269C34.6263 20.7348 34.9378 21.3244 34.9917 21.9625C35.0455 22.6006 34.8371 23.2333 34.4137 23.7174ZM31.2359 4.0087V4.4882C31.2359 5.01301 31.2359 5.55292 31.2588 6.13059C31.3084 8.67158 31.3618 11.6505 30.4958 14.4369C29.2945 18.2092 25.76 20.7745 21.7637 20.7745C17.7674 20.7745 14.2328 18.2092 13.0315 14.4369C12.1579 11.6543 12.2113 8.67913 12.2685 6.13059C12.2685 5.5567 12.2914 4.99791 12.2914 4.4882V4.0087C12.2914 3.61459 12.6142 3.2951 13.0124 3.2951H13.4969C16.6403 3.2951 18.9331 2.44182 20.9358 0.52758L21.2754 0.202877C21.5554 -0.0676258 22.0024 -0.0676258 22.2825 0.202877L22.622 0.52758C24.5943 2.44182 26.887 3.2951 30.038 3.2951H30.5225C30.9178 3.29924 31.2359 3.61752 31.2359 4.0087ZM26.0782 8.40728L25.1322 7.46338C24.8852 7.22052 24.4865 7.22052 24.2395 7.46338L20.6841 10.9823L19.2955 9.61548C19.046 9.37863 18.6522 9.37863 18.4028 9.61548L17.4491 10.5707C17.2037 10.8151 17.2037 11.2098 17.4491 11.4542L20.2301 14.2066C20.4771 14.4495 20.8758 14.4495 21.1228 14.2066L26.0821 9.29833C26.2018 9.1801 26.2687 9.01939 26.268 8.85202C26.2673 8.68464 26.199 8.5245 26.0782 8.40728Z"
+                          fill="#1EA01E"
+                        />
+                      </svg>
+                      <p class="feedback-content__security-text primary-text">
+                        Ваши данные в полной безопасности. Они видны только
+                        автору объявления.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feedback-content__discuss discuss">
+                    <h5 class="discuss__title">
+                      Что можно обсудить с представителем:
+                    </h5>
+                    <ul class="discuss__list">
+                      <li class="discuss__item primary-text">
+                        Узнать есть ли возможность открытия в вашем городе
+                      </li>
+                      <li class="discuss__item primary-text">
+                        Попросить контакты уже действующих франчайзи
+                      </li>
+                      <li class="discuss__item primary-text">
+                        Получить шаблоны договоров для ознакомления
+                      </li>
+                      <li class="discuss__item primary-text">
+                        Ознакомиться с финансовым планом и этапами запуска
+                        бизнеса
+                      </li>
+                      <li class="discuss__item primary-text">
+                        Узнать какие гарантии может дать франшиза
+                      </li>
+                      <li class="discuss__item primary-text">
+                        Обсудить возможность скидки
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="primary-line" />
+          <div class="other-contributors">
+            <h4 class="other-contributors__title">Другие участники конкурса</h4>
+            <div class="other-contributors__videos">
+              <div class="other-contributors__video-block contributor-block">
+                <video
+                  class="contributor-block__video"
+                  poster="img/video-contributor_1.png"
+                  controls
+                >
+                  <source src="media/video.mp4" type="video/mp4" />
+                  <source src="media/video.mp4" type="video/ogg" />
+                  <source src="media/video.mp4" type="video/webm" />
+                </video>
+                <div class="contributor-block__info">
+                  <h4 class="contributor-block__title primary-title">
+                    Borodach
+                  </h4>
+                  <p class="contributor-block__category primary-text">
+                    Мужские парикмехерские
+                  </p>
+                </div>
+                <a href="https://www.beboss.ru/" class="primary-text personal-info__link"
+                  >Смотреть и голосовать<svg
+                    class="personal-info__link-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2426 12L9.29289 7.05025C8.90237 6.65972 8.90237 6.02656 9.29289 5.63603C9.68342 5.24551 10.3166 5.24551 10.7071 5.63603L16.364 11.2929C16.7545 11.6834 16.7545 12.3166 16.364 12.7071L10.7071 18.364C10.3166 18.7545 9.68342 18.7545 9.29289 18.364C8.90237 17.9734 8.90237 17.3403 9.29289 16.9497L14.2426 12Z"
+                      fill="black"
+                      fill-opacity="0.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="other-contributors__video-block contributor-block">
+                <video
+                  class="contributor-block__video"
+                  poster="img/video-contributor_2.png"
+                  controls
+                >
+                  <source src="media/video.mp4" type="video/mp4" />
+                  <source src="media/video.mp4" type="video/ogg" />
+                  <source src="media/video.mp4" type="video/webm" />
+                </video>
+                <div class="contributor-block__info">
+                  <h4 class="contributor-block__title primary-title">
+                    Borodach
+                  </h4>
+                  <p class="contributor-block__category primary-text">
+                    Мужские парикмехерские
+                  </p>
+                </div>
+                <a href="#" class="primary-text personal-info__link"
+                  >Смотреть и голосовать<svg
+                    class="personal-info__link-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2426 12L9.29289 7.05025C8.90237 6.65972 8.90237 6.02656 9.29289 5.63603C9.68342 5.24551 10.3166 5.24551 10.7071 5.63603L16.364 11.2929C16.7545 11.6834 16.7545 12.3166 16.364 12.7071L10.7071 18.364C10.3166 18.7545 9.68342 18.7545 9.29289 18.364C8.90237 17.9734 8.90237 17.3403 9.29289 16.9497L14.2426 12Z"
+                      fill="black"
+                      fill-opacity="0.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="other-contributors__video-block contributor-block">
+                <video
+                  class="contributor-block__video"
+                  poster="img/video-contributor_3.png"
+                  controls
+                >
+                  <source src="media/video.mp4" type="video/mp4" />
+                  <source src="media/video.mp4" type="video/ogg" />
+                  <source src="media/video.mp4" type="video/webm" />
+                </video>
+                <div class="contributor-block__info">
+                  <h4 class="contributor-block__title primary-title">
+                    Borodach
+                  </h4>
+                  <p class="contributor-block__category primary-text">
+                    Мужские парикмехерские
+                  </p>
+                </div>
+                <a href="#" class="primary-text personal-info__link"
+                  >Смотреть и голосовать<svg
+                    class="personal-info__link-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2426 12L9.29289 7.05025C8.90237 6.65972 8.90237 6.02656 9.29289 5.63603C9.68342 5.24551 10.3166 5.24551 10.7071 5.63603L16.364 11.2929C16.7545 11.6834 16.7545 12.3166 16.364 12.7071L10.7071 18.364C10.3166 18.7545 9.68342 18.7545 9.29289 18.364C8.90237 17.9734 8.90237 17.3403 9.29289 16.9497L14.2426 12Z"
+                      fill="black"
+                      fill-opacity="0.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button
+              class="other-contributors__button-all primary-button primary-text"
+            >
+              Все участники конкурса
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="beboss-footer">
+      <div class="beboss-footer__main">
+        <div class="container">
+          <div class="beboss-footer__main-top">
+            <a class="beboss-footer__logo-container" href="#">
+              <div class="beboss-footer__logo-icon object-icons">
+                <object
+                  type="image/svg+xml"
+                  data="styles/logo.svg"
+                  width="24"
+                  height="24"
+                ></object>
+              </div>
+              <div class="beboss-footer__logo-text">БИБОСС</div>
+            </a>
+            <div class="beboss-footer__item beboss-footer__item_control">
+              <a class="bf-item" href="#">
+                <div class="bf-item__icon">
+                  <svg class="icon icon-light" width="24" height="24">
+                    <use href="img/icons.svg#light"></use>
+                  </svg>
+                </div>
+                <div class="bf-item__text">Управление</div>
+              </a>
+            </div>
+          </div>
+          <div class="beboss-footer__main-bottom">
+            <div class="beboss-footer__col">
+              <div class="beboss-footer__subtitle">Разделы</div>
+              <ul class="beboss-footer__menu">
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#fr_services"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Сообщество</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#kn"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Коммерческая недвижимость</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#fr_b2b-services"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Франшизы</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#gb"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Готовый бизнес</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#opt"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Товары для бизнеса</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#invest"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Инвестиции</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#idea"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Бизнес-идеи</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#bplan"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Бизнес-планы</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#request"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Заявки</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="beboss-footer__col">
+              <div class="beboss-footer__subtitle">Проекты</div>
+              <ul class="beboss-footer__menu">
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Бизнес-журнал</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Календарь мероприятий</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Рейтинг франшиз</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Рейтинг торговых центров</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Франчайзинговая премия</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Как начать бизнес</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Карта МСП</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="beboss-footer__col">
+              <div class="beboss-footer__subtitle">Бибосс</div>
+              <ul class="beboss-footer__menu">
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">О портале</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Блоги пользователей</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Отзывы о нас</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Рекламные услуги</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Работа у нас</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Книги</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__text">Контактные данные</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="beboss-footer__soc-container">
+              <div class="beboss-footer__subtitle">Соцсети</div>
+              <ul class="beboss-footer__menu beboss-footer__menu_soc">
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="https://www.facebook.com/BeBoss.ru">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#fb"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Facebook</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="https://vk.com/beboss">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#vk"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Вконтакте</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="https://ok.ru/">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#telegram"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Телеграм</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#inst"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Instagram</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#youtube"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Youtube</div>
+                  </a>
+                </li>
+                <li class="beboss-footer__item">
+                  <a class="bf-item" href="#">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#odnokl"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Одноклассники</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="beboss-footer__btn-container">
+              <div class="beboss-footer__btn">
+                <a class="btn btn-outline-light btn-lg" href="#">
+                  <div class="bf-item align-middle">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#telegram"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Чат предпринимателей</div>
+                  </div>
+                </a>
+              </div>
+              <div class="beboss-footer__btn">
+                <a class="btn btn-outline-light btn-lg" href="#">
+                  <div class="bf-item align-middle">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#iphone"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Мобильное приложение</div>
+                  </div>
+                </a>
+              </div>
+              <div class="beboss-footer__btn">
+                <a class="btn btn-outline-light btn-lg" href="#">
+                  <div class="bf-item align-middle">
+                    <div class="bf-item__icon">
+                      <svg class="icon icon-light" width="24" height="24">
+                        <use href="img/icons.svg#support"></use>
+                      </svg>
+                    </div>
+                    <div class="bf-item__text">Служба поддержки</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="beboss-footer__bottom">
+        <div class="container">
+          <div class="beboss-footer__bottom-container">
+            <div class="beboss-footer__bottom-subtitle">
+              <div class="beboss-footer__subtitle">Другие страны</div>
+            </div>
+            <div class="beboss-footer__country-container">
+              <div class="beboss-footer__country">
+                <a class="bf-item" href="#">
+                  <div class="bf-item__icon">
+                    <img src="styles/Ukraina.jpg" />
+                  </div>
+                  <div class="bf-item__text">Украина</div>
+                </a>
+              </div>
+              <div class="beboss-footer__country">
+                <a class="bf-item" href="#">
+                  <div class="bf-item__icon">
+                    <img src="styles/Kazakhstan.jpg" />
+                  </div>
+                  <div class="bf-item__text">Казахстан</div>
+                </a>
+              </div>
+              <div class="beboss-footer__country">
+                <a class="bf-item" href="#">
+                  <div class="bf-item__icon">
+                    <img src="styles/Belarus.jpg" />
+                  </div>
+                  <div class="bf-item__text">Белоруссия</div>
+                </a>
+              </div>
+            </div>
+            <div class="beboss-footer__copyright">
+              <div class="bf-item">
+                <div class="bf-item__text">© БИБОСС 2006-2019</div>
+              </div>
+              <div class="beboss-footer__li">
+                <a href="#"
+                  ><img
+                    src="styles/logo.gif"
+                    alt="LiveInternet: показано число просмотров и посетителей за 24 часа"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="styles/jquery-3.js"></script>
+    <script src="styles/svgxuse.js"></script>
+    <script src="styles/script.js"></script>
+    <script src="styles/baron.js"></script>
+    <script src="styles/custom-select.js"></script>
+    <script src="styles/bk-select.js"></script>
+    <script src="styles/menu.js"></script>
+  </body>
+</html>
