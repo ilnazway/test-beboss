@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/menu-v2.css" />
     <link rel="stylesheet" href="styles/footer-v2.css" />
     <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="scripts/lightbox/css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="new-boss no-touchevents">
@@ -759,6 +760,7 @@
                   </svg>
                 </a>
               </div>
+              <hr class="personal-solution__line primary-line">
               <div class="personal-solution__representative representative">
                 <div class="representative__info">
                   <img
@@ -846,7 +848,7 @@
                 <h3 class="primary-title franchise-cost__title">
                   Стоимость франшизы и цена владения
                 </h3>
-                <table class="franchise-cost__table cost-table">
+                <!-- <table class="franchise-cost__table cost-table">
                   <tr class="cost-table__line">
                     <th class="cost-table__paragraph primary-text">
                       Вступительный взнос
@@ -872,7 +874,21 @@
                       рублей в год
                     </td>
                   </tr>
-                </table>
+                </table> -->
+                <ul class="franchise-cost__list cost-franchise">
+                  <li class="cost-franchise__item">
+                    <span class="cost-franchise__paragraph primary-text">Вступительный взнос</span>
+                    <p class="cost-franchise__value primary-text">150 000 — 400 000 ₽</p>
+                  </li>
+                  <li class="cost-franchise__item">
+                    <span class="cost-franchise__paragraph primary-text">Роялти</span>
+                    <p class="cost-franchise__value primary-text">5% от оборота в месяц, но не более 10 000 руб. При этом минимальная гарантированная сумма, подлежащая переводу Дилером, составляет 5 000 рублей (для городов менее 250 тысяч жителей 3 000 руб., для городов менее 100 тысяч согласовывается)</p>
+                  </li>
+                  <li class="cost-franchise__item">
+                    <span class="cost-franchise__paragraph primary-text">Иные текущие платежи</span>
+                    <p class="cost-franchise__value primary-text">Аттестация и повышение квалификации тренеров 2 000 — 5 000 рублей в год</p>
+                  </li>
+                </ul>
                 <hr class="primary-line" />
                 <div class="franchise-cost__request">
                   <a
@@ -936,36 +952,44 @@
               </div>
               <div class="photo-franchise">
                 <div class="photo-franchise__column">
-                  <a href="#" class="photo-franchise__img-link">
-                    <img
-                      class="photo-franchise__img"
-                      src="img/photo-franchise_1.png"
-                      alt="Photo franchise №1"
-                    />
-                  </a>
-                  <a href="#" class="photo-franchise__img-link">
-                    <img
-                      class="photo-franchise__img"
-                      src="img/photo-franchise_2.png"
-                      alt="Photo franchise №2"
-                    />
-                  </a>
+                  <div class="photo-franchise__img-wrap">
+                    <a href="img/ktm.jpg" data-lightbox="image-1" class="photo-franchise__img-link">
+                      <img
+                        class="photo-franchise__img"
+                        src="img/ktm.jpg"
+                        alt="Photo franchise №1"
+                      />
+                    </a>
+                  </div>
+                  <div class="photo-franchise__img-wrap">
+                    <a href="img/photo-franchise_2.png" data-lightbox="image-2" class="photo-franchise__img-link">
+                      <img
+                        class="photo-franchise__img"
+                        src="img/photo-franchise_2.png"
+                        alt="Photo franchise №2"
+                      />
+                    </a>
+                  </div>
                 </div>
                 <div class="photo-franchise__column">
-                  <a href="#" class="photo-franchise__img-link">
-                    <img
-                      class="photo-franchise__img"
-                      src="img/photo-franchise_3.png"
-                      alt="Photo franchise №3"
-                    />
-                  </a>
-                  <a href="#" class="photo-franchise__img-link">
-                    <img
-                      class="photo-franchise__img"
-                      src="img/photo-franchise_4.png"
-                      alt="Photo franchise №4"
-                    />
-                  </a>
+                  <div class="photo-franchise__img-wrap">
+                    <a href="img/photo-franchise_3.png" data-lightbox="image-3" class="photo-franchise__img-link">
+                      <img
+                        class="photo-franchise__img"
+                        src="img/photo-franchise_3.png"
+                        alt="Photo franchise №3"
+                      />
+                    </a>
+                  </div>
+                  <div class="photo-franchise__img-wrap">
+                    <a href="img/photo-franchise_4.png" data-lightbox="image-4" class="photo-franchise__img-link">
+                      <img
+                        class="photo-franchise__img"
+                        src="img/photo-franchise_4.png"
+                        alt="Photo franchise №4"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="feedback-content">
@@ -1065,6 +1089,7 @@
                       </p>
                     </div>
                   </div>
+                  <hr class="feedback-content__line primary-line">
                   <div class="feedback-content__discuss discuss">
                     <h5 class="discuss__title">
                       Что можно обсудить с представителем:
@@ -1117,7 +1142,9 @@
                     Мужские парикмехерские
                   </p>
                 </div>
-                <a href="https://www.beboss.ru/" class="primary-text personal-info__link"
+                <a
+                  href="https://www.beboss.ru/"
+                  class="primary-text personal-info__link"
                   >Смотреть и голосовать<svg
                     class="personal-info__link-icon"
                     width="24"
@@ -1579,5 +1606,6 @@
     <script src="styles/custom-select.js"></script>
     <script src="styles/bk-select.js"></script>
     <script src="styles/menu.js"></script>
+    <script src="scripts/lightbox/js/lightbox.min.js"></script>
   </body>
 </html>
