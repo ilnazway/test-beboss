@@ -141,19 +141,19 @@
   background: #1f3b74; }
 
 .button-vote_fb:hover {
-  background: #3B5998; }
+  background: #3b5998; }
 
 .button-vote_vk {
   background: #27466a; }
 
 .button-vote_vk:hover {
-  background: #4C6C91; }
+  background: #4c6c91; }
 
 .button-vote_ok {
   background: #d06313; }
 
 .button-vote_ok:hover {
-  background: #F68634; }
+  background: #f68634; }
 
 .button-vote__text {
   font-size: 18px;
@@ -560,8 +560,7 @@
   left: 1px; }
 
 .other-contributors {
-  margin: 0 0 40px 0;
-  display: none; }
+  margin: 0 0 40px 0; }
 
 .other-contributors__videos {
   display: -webkit-box;
@@ -572,14 +571,27 @@
           justify-content: space-between;
   margin: 0 0 32px 0; }
 
+.other-contributors__video-block {
+  max-width: 352px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 0 32px 0 0; }
+
+.other-contributors__video-block:last-child {
+  margin: 0 0 0 0; }
+
 .contributor-block__video {
   border-radius: 16px;
-  width: 352px;
-  height: 198px;
+  height: auto;
+  max-width: 100%;
   overflow: hidden; }
 
 .contributor-block__info {
   margin: 0 0 16px 0; }
+
+.contributor-block__line {
+  display: none; }
 
 .other-contributors__button-all {
   font-weight: 700;
@@ -659,7 +671,19 @@
         -ms-flex-pack: center;
             justify-content: center; }
   .representative__button {
-    min-width: 350px; } }
+    min-width: 350px; }
+  .other-contributors__video-block {
+    margin: 0 0 24px 0; }
+  .other-contributors__videos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contributor-block__line {
+    display: block; } }
 
 @media (max-width: 598px) {
   .contest-info {
