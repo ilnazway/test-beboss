@@ -213,11 +213,17 @@
 .personal-solution__representative {
   margin: 0 0 0 auto; }
 
+.representative__inner {
+  text-align: center; }
+
 .representative__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 16px 0; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 16px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .representative__photo {
   max-width: 48px;
@@ -323,6 +329,17 @@
 .franchise-cost__request {
   text-align: center; }
 
+.franchise-cost__link-download {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .franchise-cost__link-download:hover {
   text-decoration: none; }
 
@@ -344,12 +361,15 @@
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  line-height: 40px; }
+  line-height: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 .franchise-cost__text {
   font-weight: 700;
   margin: 0 0 0 16px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  text-align: left; }
 
 .franchise-info {
   margin: 0 0 32px 0; }
