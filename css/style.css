@@ -213,7 +213,10 @@
 .personal-solution__representative {
   margin: 0 0 0 auto; }
 
-.representative__inner {
+.representative {
+  width: 100%; }
+
+.representative__wrap-inner {
   text-align: center; }
 
 .representative__info {
@@ -232,14 +235,18 @@
   border-radius: 50%; }
 
 .representative__inner {
-  margin: 0 0 0 8px; }
+  margin: 0 0 0 8px;
+  text-align: left; }
 
 .representative__button {
   background: #0d870d;
   border-radius: 6px;
   color: #ffffff;
   font-weight: 700;
-  min-width: 232px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
   min-height: 50px;
   padding: 10px;
   -webkit-transition: all 0.8s ease-out 0s;
@@ -690,8 +697,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .representative__button {
-    min-width: 350px; }
   .other-contributors__video-block {
     margin: 0 0 24px 0; }
   .other-contributors__videos {
